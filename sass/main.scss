@@ -1,0 +1,79 @@
+.application {
+  width: 950px;
+  min-height: 900px;
+  margin: auto;
+}
+
+.row {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.panel {
+  float: left;
+  display: inline;
+  width: 220px;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.panel > div {
+  margin: 15px 0px;
+}
+
+.control-area {
+  margin: auto;
+}
+
+.control-input-area .param-block {
+  display: block;
+  margin: 5px 0px;
+}
+
+input.param {
+  width: 30px;
+}
+
+.info-block .param {
+  display: block;
+}
+
+.control-button {
+  margin: 10px;
+  cursor: pointer;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.control-about-area .element {
+  display: block;
+  margin: 5px;
+}
+
+.control-about-area > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #970000;
+}
+
+.control-about-area > a:hover {
+  font-weight: bold;
+}
+
+.board {
+  float: right;
+  display: inline;
+  width: 700px;
+  height: 700px;
+  border: 1px solid brown;
+}
+
+.footer {
+  max-height: 100px;
+}
