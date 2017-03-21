@@ -13,8 +13,8 @@ class Size extends Reflux.Component {
         return(
             <div className="param-block">
                 <span className="param">Wymiary:&nbsp;</span>
-                <input className="param param-width" value={this.state.width} onChange={Actions.changeWidth} disabled={this.state.started ? "true" : ""} />&nbsp;x&nbsp;
-                <input className="param param-height" value={this.state.height} onChange={Actions.changeHeight} disabled={this.state.started ? "true" : ""} />
+                <input type="number" step="1" max="280" className="param param-width" value={this.state.width} onChange={Actions.changeWidth} disabled={this.state.started ? "true" : ""} />&nbsp;x&nbsp;
+                <input type="number" step="1" max="280" className="param param-height" value={this.state.height} onChange={Actions.changeHeight} disabled={this.state.started ? "true" : ""} />
             </div>
         );
     }

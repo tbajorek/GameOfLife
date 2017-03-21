@@ -13,7 +13,7 @@ class Density extends Reflux.Component {
         return(
             <div className="param-block">
                 <span className="param">Gęstość:&nbsp;</span>
-                <input className="param param-density" disabled={this.state.started ? "true" : ""} value={this.state.density} onChange={Actions.changeDensity} />&nbsp;[0;1]
+                <input type="number" step="0.01" className="param param-density" disabled={this.state.started ? "true" : ""} value={this.state.density} onChange={Actions.changeDensity} />&nbsp;[0;1]
             </div>
         );
     }
