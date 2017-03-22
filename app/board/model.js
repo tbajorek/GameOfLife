@@ -8,14 +8,14 @@ class Model {
         ) return;
         this.generateBoard(width, height, density);
         this.shifts = [];
-        this.calcNext = function(r,c,board){return 0;};
+        this.calcNext = function(r,c,board){return 0;};this.count=0;
     }
 
     generateBoard(width, height, density) {
-        this.history = new History();
         this.width = width;
         this.height = height;
         this.size = this.height*this.width;
+        this.history = new History(100, this.size);
         this.density = density;
         this.population = 0;
         var board = new Array(height);
@@ -35,8 +35,8 @@ class Model {
             }
         }
         this.population = border;
-        this.board = board;
-        this.history.add(this.population);
+        this.board = board;console.log(this.count);
+        this.history.addNormalized(this.population);
     }
 
     initializeByArray(initValue) {
@@ -57,7 +57,7 @@ class Model {
 
     randomPoint() {
         let x = Math.floor(Math.random() * this.width);
-        let y = Math.floor(Math.random() * this.height);
+        let y = Math.floor(Math.random() * this.height);this.count++;
         return {"x":x, "y":y};
     }
     setCalcNext(calcNext) {
@@ -104,7 +104,7 @@ class Model {
                 }
             }
         }
-        this.history.add(this.population);
+        this.history.addNormalized(this.population);
     }
 }
 

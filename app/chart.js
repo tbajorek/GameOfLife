@@ -12,7 +12,7 @@ class Chart extends React.Component {
         if (history.isFull()) {
             chart.series[0].data[0].remove();
         }
-        chart.series[0].addPoint({x: history.time, y: history.lastValue});
+        chart.series[0].addPoint({x: history.time, y: history.getInPercent()});
         return history.time == 0;
     }
     render() {

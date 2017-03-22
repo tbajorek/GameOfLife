@@ -12,7 +12,7 @@ class Information extends Reflux.Component {
     render() {
         return(
             <div className="info-block">
-                <span className="param">Populacja:&nbsp;{this.state.model.population}</span>
+                <span className="param">Populacja:&nbsp;{this.state.model.history.getInPercent(true)}</span>
                 <span className="param">Czas:&nbsp;{this.state.model.history.time}</span>
             </div>
         );

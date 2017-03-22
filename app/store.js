@@ -40,15 +40,16 @@ class Store extends Reflux.Store {
             series: [{
                 data: [],
                 showInLegend: false,
-                name: 'Populacja',
+                name: 'Populacja (%)',
                 marker: {
                     enabled: false
                 }
             }],
             yAxis: {
                 min: 0,
+                max: 100,
                 title:{
-                    text:'Populacja',
+                    text:'Populacja (%)',
                     rotation: -90
                 }
             },
