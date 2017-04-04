@@ -35,7 +35,7 @@ class Model {
             }
         }
         this.population = border;
-        this.board = board;console.log(this.count);
+        this.board = board;
         this.history.addNormalized(this.population);
     }
 
@@ -78,7 +78,7 @@ class Model {
     }
 
     getValue(r, c) {
-        let point = this.getNormalizedPoint(r, c);//console.log(point);
+        let point = this.getNormalizedPoint(r, c);
         return this.board[point.r][point.c];
     }
 
