@@ -1,5 +1,5 @@
 # GameOfLife
-Game of Life - web application written in JavaScript, CSS and HTML.
+Game of Life - web application written in JavaScript, CSS and HTML. It's asynchronous version of the algorithm.
 
 # Installation
 ```bash
