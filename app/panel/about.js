@@ -3,6 +3,9 @@ import Size from './input/size';
 import Density from './input/density';
 import Information from './input/information';
 
+/**
+ * Component with  information about the application and its author
+ */
 class About extends React.Component {
     render() {
         return(

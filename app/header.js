@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Component with a header of the application
+ */
 class Header extends React.Component {
     render() {
         return(

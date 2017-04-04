@@ -2,6 +2,9 @@ import React from 'react';
 import Reflux from 'reflux';
 import Model from './board/model';
 
+/**
+ * List of available actions
+ */
 var Actions = Reflux.createActions([
     'startStop',
     'next',
@@ -11,6 +14,9 @@ var Actions = Reflux.createActions([
     'changeDensity'
 ]);
 
+/**
+ * Store with data used in the application
+ */
 class Store extends Reflux.Store {
     constructor() {
         super();

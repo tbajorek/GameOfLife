@@ -2,6 +2,9 @@ import React from 'react';
 import Reflux from 'reflux';
 import {Store, Actions} from '../../store'
 
+/**
+ * Component with information about amount of cells and a time of simulation
+ */
 class Information extends Reflux.Component {
     constructor() {
         super();

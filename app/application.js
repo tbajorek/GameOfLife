@@ -7,6 +7,9 @@ import Model from './board/model';
 import Panel from './panel/panel';
 import Footer from './footer';
 
+/**
+ * Main class of Game of Life application
+ */
 class Application extends Reflux.Component {
     constructor() {
         super();

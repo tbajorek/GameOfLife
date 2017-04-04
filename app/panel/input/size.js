@@ -2,6 +2,9 @@ import React from 'react';
 import Reflux from 'reflux';
 import {Store, Actions} from '../../store';
 
+/**
+ * Component allows to set dimensions of the board
+ */
 class Size extends Reflux.Component {
     constructor() {
         super();

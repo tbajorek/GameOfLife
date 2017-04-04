@@ -1,5 +1,8 @@
 import History from '../history';
 
+/**
+ * Model of board with alive and dead cells
+ */
 class Model {
     constructor(width, height, density) {
         if (width == undefined &&

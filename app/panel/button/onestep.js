@@ -2,6 +2,9 @@ import React from 'react';
 import Reflux from 'reflux';
 import {Store, Actions} from '../../store';
 
+/**
+ * Component of the button which allows to execute only one step of simulation
+ */
 class OneStep extends Reflux.Component {
     constructor() {
         super();

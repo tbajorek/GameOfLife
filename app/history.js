@@ -1,3 +1,7 @@
+/**
+ * Model of popularity's history
+ */
+
 class History {
     constructor(limit, maxValue, precision) {
         if (limit == undefined) {

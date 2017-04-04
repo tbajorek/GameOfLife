@@ -3,6 +3,9 @@ import Reflux from 'reflux';
 import {Store, Actions} from './store';
 import Chart from './chart';
 
+/**
+ * Component with a footer of the application
+ */
 class Footer extends Reflux.Component {
     constructor() {
         super();

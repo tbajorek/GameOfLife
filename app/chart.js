@@ -1,6 +1,9 @@
 import React from 'react';
 const ReactHighcharts = require('react-highcharts');
 
+/**
+ * Component of chart of cell's  amount of popularity
+ */
 class Chart extends React.Component {
     shouldComponentUpdate(nextProps, nextState) {
         let chart = this.refs.chart.getChart();

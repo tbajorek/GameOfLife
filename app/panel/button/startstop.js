@@ -2,6 +2,9 @@ import React from 'react';
 import Reflux from 'reflux';
 import {Store, Actions} from '../../store';
 
+/**
+ * Component with start/stop button
+ */
 class StartStop extends Reflux.Component {
     constructor() {
         super();

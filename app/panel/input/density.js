@@ -2,6 +2,9 @@ import React from 'react';
 import Reflux from 'reflux';
 import {Store, Actions} from '../../store';
 
+/**
+ * Component with density field in the panel
+ */
 class Density extends Reflux.Component {
     constructor() {
         super();
