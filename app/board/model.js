@@ -58,7 +58,7 @@ class Model {
     randomPoint() {
         let x = Math.floor(Math.random() * this.width);
         let y = Math.floor(Math.random() * this.height);this.count++;
-        return {"x":x, "y":y};
+        return {x, y};
     }
     setCalcNext(calcNext) {
         this.calcNext = calcNext;
