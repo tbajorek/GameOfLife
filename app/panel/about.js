@@ -7,10 +7,10 @@ class About extends React.Component {
     render() {
         return(
             <div className="control-area control-about-area">
-                <a className="element" href="./dokumentacja.pdf">
+                <a className="element" target="_blank" href="./dokumentacja.pdf">
                     <i className="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;Dokumentacja
                 </a>
-                <a className="element" href="GameOfLife.zip">
+                <a className="element" target="_blank" href="GameOfLife.zip">
                     <i className="fa fa-download" aria-hidden="true"></i>&nbsp;Pobierz kod
                 </a>
                 <span className="element">
